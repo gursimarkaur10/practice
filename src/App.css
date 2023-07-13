@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,100;1,200&display=swap');
+*{
+    margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Poppins", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root{
+    --red:#d01c28;
+    --gray:#2e2e2e;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo img{
+    width: 70px;
 }
-
-.App-link {
-  color: #61dafb;
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 auto;
+    max-width: 1280px; */
+    height: 72px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+button{
+    all: unset;
+    padding: 6px 16px;
+    background:var(--red);
+    height: 32px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.main_part{
+    display: flex;
+    /* margin: 0 auto;
+    max-width: 1280px;  */
+    align-items: center;
+    height: calc(100vh - 72px);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.main_part h1{
+    font-size: 113px;
+    font-weight: 800;
+    line-height: 102px;
+}
+.main_part p{
+    font-weight: 600;
+    color: var(--gray);
+    max-width: 400px;
+}
+.buttons{
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+}
+.buttons button{
+    font-size: 24px;
+}
+.sec_btn{
+    background: transparent;
+    color: var(--gray);
+    border: 1px solid gray;
+}
+.shopping p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.brand-names{
+    display: flex;
+    gap: 16px;
+}
+.brand-names img{
+    width: 32px;
+}
+.image img{
+    width: 600px;
 }
